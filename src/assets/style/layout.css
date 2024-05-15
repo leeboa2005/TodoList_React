@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 전체 영역*/
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    max-width: var(--default-max-width);
+    min-width: var(--default-min-width);
+    margin: 0 auto;
+    flex: 1;
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* Todo 메모장 레이아웃 */
+
+.todo_container {
+    border: 1px solid var(--border-color);
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 31.5%;
+    margin-left: calc(5.5% / 2);
+    margin-bottom: 5%;
+    min-height: 200px;
+    position: relative;
+    ;
+}
+
+.todo_text_container {
+    min-height: 135px;
+}
+
+
+.todo_container .todo_text_container h4 {
+    padding-bottom: 2px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.todo_container .todo_text_container p {
+    font-size: var(--font-text-size);
+}
+
+.todo_container:nth-child(3n + 1) {
+    margin-left: 0;
+}
+
+/* Todo 메모장 스티커 */
+.todo_text_container::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 53px;
+    height: 53px;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -16px;
+    background-size: cover;
+}
+
+.todo_text_container::after {
+    background-image: url("../img/sticker.png");
+}
+
+.list_wrap.done .todo_text_container::after {
+    background-image: url("../img/done_sticker.png");
+}
+
+/* 삭제, 완료, 취소 버튼 */
+.delete_btn,
+.complete_btn {
+    all: unset;
+    background: var(--main-color);
+    min-width: 28px;
+    padding: 8px 15px 4px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.complete_btn:hover {
+    background-color: var(--main-color);
+}
+
+.delete_btn {
+    background-color: var(--button-black);
+    color: #fff;
+    margin-right: 10px;
+}
+
+.delete_btn:hover {
+    background-color: #060606;
+}

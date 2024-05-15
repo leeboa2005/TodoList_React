@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Form 레이아웃 */
+.form_container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.input_container {
+    margin-right: 20px;
+}
+
+
+.input_container label {
+    margin-right: 10px;
+    ;
+}
+
+.input_container input {
+    min-width: 250px;
+    max-width: 350px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input_container input:first-of-type {
+    margin-right: 10px;
+}
+
+/* 추가하기 버튼 */
+.form_container button {
+    all: unset;
+    background: #faa214;
+    min-width: 28px;
+    padding: 8px 20px 4px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form_container button:hover {
+    background-color: #f19500;
+}
