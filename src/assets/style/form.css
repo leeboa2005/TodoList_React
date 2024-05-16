@@ -31,8 +31,7 @@
 
 /* 추가하기 버튼 */
 .form_container button {
-    all: unset;
-    background: #faa214;
+    background: var(--main-color);
     min-width: 28px;
     padding: 8px 20px 4px 20px;
     border-radius: 10px;
@@ -41,5 +40,5 @@
 }
 
 .form_container button:hover {
-    background-color: #f19500;
+    background-color: var(--main-color-hover);
 }

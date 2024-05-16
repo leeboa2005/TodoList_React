@@ -13,7 +13,7 @@ const List = ({ todos, setTodos }) => {
     setTodos(remainedTodos);
   };
 
-  //완료 됬을때 누르면 isDone이 flase -> true로 변경되면서 Done
+  //완료 됬을때 누르면 isDone이 false -> true로 변경되면서 Done
   const onCompleteHandler = (selectedId) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === selectedId) {
@@ -30,8 +30,8 @@ const List = ({ todos, setTodos }) => {
       <h3>KeepGoing</h3>
       <div className="list_wrap">
         {todos.map((todo) => {
+          // todo 완료 전
           if (todo.isDone === false) {
-            // 완료 전
             return (
               <Todo
                 todo={todo}
@@ -47,8 +47,8 @@ const List = ({ todos, setTodos }) => {
       <h3>Done</h3>
       <div className="list_wrap done">
         {todos.map((todo) => {
+          // todo 완료 후
           if (todo.isDone === true) {
-            // 완료 후
             return (
               <Todo
                 todo={todo}

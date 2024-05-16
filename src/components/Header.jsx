@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/style/header.css";
 
+// Date 객체는 생성자 함수을 사용해 현재 날짜와 시간을 불러옴
 const today = new Date();
 const CreatedDate = `${today.getFullYear()}년 ${
   today.getMonth() + 1
