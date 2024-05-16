@@ -14,7 +14,7 @@ const TodoList = () => {
       isDone: false,
     },
     {
-      id: 3,
+      id: 2,
       title: "TIL 작성",
       content: "스터디 공부 내용 정리하기",
       isDone: true,

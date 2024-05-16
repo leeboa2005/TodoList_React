@@ -23,7 +23,7 @@ const Form = ({ todos, setTodos }) => {
   const onSubmitHandler = (event) => {
     if (!inputTodo.title || !inputTodo.content) {
       alert("제목 및 내용을 작성해주세요.");
-      return false;
+      return;
     } else {
       event.preventDefault(); // submit을 하면 자동으로 페이지를 리랜더링하는데 정보 유실을 막기위해 사용
       setTodos([...todos, inputTodo]);
