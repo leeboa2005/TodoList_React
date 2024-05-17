@@ -27,7 +27,6 @@ const List = ({ todos, setTodos }) => {
 
     return (
         <div className="list_container">
-            {/* 밑에 내용이 같다면 타이틀부분만 변경되게 수정해보기*/}
             <h3>KeepGoing</h3>
             <ul className="list_wrap">
                 {todos.map((todo) => {
