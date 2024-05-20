@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import '../assets/style/todoForm.css';
 
 const TodoForm = ({ todos, setTodos }) => {
-    const initialState = { id: 0, title: '', content: '', isDone: false }; //초기값
+    const initialState = { id: 0, title: '', content: '', isDone: false }; //초깃값
 
     // 부모 컴포넌트인 TodoList에서 선언한 useState가 화면에 처음 출력되는 값이라면,
     //여기서 선언한 useState는 input에서 받은 value를 저장한다.
